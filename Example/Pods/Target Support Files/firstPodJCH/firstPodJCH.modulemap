@@ -1,0 +1,6 @@
+framework module firstPodJCH {
+  umbrella header "firstPodJCH-umbrella.h"
+
+  export *
+  module * { export * }
+}

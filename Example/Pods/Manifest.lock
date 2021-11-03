@@ -1,0 +1,16 @@
+PODS:
+  - firstPodJCH (0.1.0)
+
+DEPENDENCIES:
+  - firstPodJCH (from `../`)
+
+EXTERNAL SOURCES:
+  firstPodJCH:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  firstPodJCH: f4c4d08817bb4437465f27d74ebfacce41e778ae
+
+PODFILE CHECKSUM: 609e1128adad05f34d883208c268040ad0be8d56
+
+COCOAPODS: 1.10.2

@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* firstPodJCH_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstPodJCH_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		63BAF04254A598EC2B1BD9FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		63BAF04254A598EC2B1BD9FB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7BF652C40E5BEE4EB7CF6FB8 /* Pods_firstPodJCH_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstPodJCH_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		902AEA41D005E948071199F5 /* Pods-firstPodJCH_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firstPodJCH_Example.debug.xcconfig"; path = "Target Support Files/Pods-firstPodJCH_Example/Pods-firstPodJCH_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9134B950CD66C9E28CC9D845 /* Pods_firstPodJCH_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstPodJCH_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCFAE4283F6FEDD6A4F5A0E2 /* firstPodJCH.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = firstPodJCH.podspec; path = ../firstPodJCH.podspec; sourceTree = "<group>"; };
-		DB85C30F23A70729594B2D4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CCFAE4283F6FEDD6A4F5A0E2 /* firstPodJCH.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = firstPodJCH.podspec; path = ../firstPodJCH.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DB85C30F23A70729594B2D4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				34C9B09D91F947A108F684A0 /* Pods-firstPodJCH_Tests.debug.xcconfig */,
 				0009366829F22784E276956F /* Pods-firstPodJCH_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
