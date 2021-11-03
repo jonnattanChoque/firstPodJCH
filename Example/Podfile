@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'firstPodJCH_Example' do
+  pod 'firstPodJCH', :path => '../'
+
+  target 'firstPodJCH_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
