@@ -17,7 +17,7 @@
 		AECF2E852F1883ED7B11E224FFF0D00A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CD9D9BCEA5E29F23FBD841D6346BB057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E697D5B027322B0B00B3530F /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E697D5AE27322B0B00B3530F /* .gitkeep */; };
-		E697D5B127322B0B00B3530F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697D5AF27322B0B00B3530F /* ReplaceMe.swift */; };
+		E697D5B327322BE800B3530F /* BlinkingLbl.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697D5B227322BE800B3530F /* BlinkingLbl.swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 		E0094BDB7EBF825BCAD58EE988BBD2C0 /* firstPodJCH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "firstPodJCH-dummy.m"; sourceTree = "<group>"; };
 		E54F46092A1FC5F08220F379137F2F6B /* Pods-firstPodJCH_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-firstPodJCH_Example-umbrella.h"; sourceTree = "<group>"; };
 		E697D5AE27322B0B00B3530F /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E697D5AF27322B0B00B3530F /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		E697D5B227322BE800B3530F /* BlinkingLbl.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingLbl.swift.swift; sourceTree = "<group>"; };
 		EC1C6EEA7B5E500BA911CAA689D94AE1 /* Pods-firstPodJCH_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-firstPodJCH_Tests-Info.plist"; sourceTree = "<group>"; };
 		F6A49982E1EDF46E6CB0ABFC26F77896 /* firstPodJCH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = firstPodJCH.debug.xcconfig; sourceTree = "<group>"; };
 		F73073CFF593B4C90AB2F9DC10A3DBE3 /* Pods_firstPodJCH_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firstPodJCH_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				E697D5AE27322B0B00B3530F /* .gitkeep */,
-				E697D5AF27322B0B00B3530F /* ReplaceMe.swift */,
+				E697D5B227322BE800B3530F /* BlinkingLbl.swift.swift */,
 			);
 			name = Classes;
 			path = firstPodJCH/Classes;
@@ -329,6 +329,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F574CFE4F7928F4990B0A81BEC1D7820 = {
+						LastSwiftMigration = 1310;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -380,8 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E697D5B127322B0B00B3530F /* ReplaceMe.swift in Sources */,
 				696A6816D574B61FE5138D4632986775 /* firstPodJCH-dummy.m in Sources */,
+				E697D5B327322BE800B3530F /* BlinkingLbl.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6A49982E1EDF46E6CB0ABFC26F77896 /* firstPodJCH.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -572,6 +578,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -644,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 101D6F6F795BF7DE79C831198FFDDA46 /* firstPodJCH.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
